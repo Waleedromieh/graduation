@@ -18,7 +18,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <span className="text-red-600 font-bold text-xl"><img src={logo} className='w-[70%]' alt="" /></span>
-              <span className='text-red-600 font-bold text-xl'> <span className='text-gray-500'>C</span>P<span className='text-gray-500'>C</span> MART</span>
+              <span className='text-red-600 font-bold text-xl'> <span className='text-gray-500'>C</span>P<span className='text-gray-500'>C</span> Go</span>
             </div>
             <div className="hidden md:ml-6 md:flex md:space-x-8">
               <NavLink to={'/'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium ' }>Home</NavLink>
