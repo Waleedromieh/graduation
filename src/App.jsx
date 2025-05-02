@@ -9,6 +9,8 @@ import Profile from './Components/Profile/Profile'
 import Products from './Components/Products/Products'
 import Register from './Components/Register/Register'
 import Login from './Components/Login/Login'
+import Cart from './Components/Cart/Cart'
+import CheckoutPage from './Components/Checkout/Checkout'
 
 function App() {
   let x=createBrowserRouter([
@@ -21,6 +23,8 @@ function App() {
       {path:'products',element:<Products/>},
       {path:'register',element:<Register/>},
       {path:'login',element:<Login/>},
+      {path:'checkout',element:<CheckoutPage/>},
+      {path:'cart',element:<Cart/>},
     ]}
   ])
 

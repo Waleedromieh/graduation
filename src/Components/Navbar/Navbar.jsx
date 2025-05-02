@@ -21,14 +21,13 @@ const Navbar = () => {
               <span className='text-red-600 font-bold text-xl'> <span className='text-gray-500'>C</span>P<span className='text-gray-500'>C</span> Go</span>
             </div>
             <div className="hidden md:ml-6 md:flex md:space-x-8">
-              <NavLink to={'/'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium ' }>Home</NavLink>
-              <NavLink to={'about'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium ' }>About</NavLink>
-              <NavLink to={'services'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium ' }>Services</NavLink>
-              <NavLink to={'contact'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium ' }>Contact</NavLink>
+              <NavLink to={'/'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Home</NavLink>
+              <NavLink to={'about'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>About</NavLink>
+              <NavLink to={'services'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Services</NavLink>
+              <NavLink to={'contact'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Contact</NavLink>
+              <NavLink to={'products'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Products</NavLink>
+              <NavLink to={'cart'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Cart</NavLink>
 
-            
-         
-          
             </div>
           </div>
 
@@ -69,10 +68,12 @@ const Navbar = () => {
       {/* Mobile menu, show/hide based on menu state */}
       <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white flex flex-col items-start">
-              <NavLink to={'/'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium block ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium block w-fit' }>Home</NavLink>
-              <NavLink to={'about'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium block':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium block' }>About</NavLink>
-              <NavLink to={'services'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium block':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium block' }>Services</NavLink>
-              <NavLink to={'contact'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium block':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium block' }>Contact</NavLink>
+        <NavLink to={'/'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium ' }>Home</NavLink>
+              <NavLink to={'about'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>About</NavLink>
+              <NavLink to={'services'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Services</NavLink>
+              <NavLink to={'contact'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Contact</NavLink>
+              <NavLink to={'products'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Products</NavLink>
+              <NavLink to={'cart'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Cart</NavLink>
           <NavLink to={'register'} className="w-full mt-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium justify-center text-center">
             Get Started
           </NavLink>
