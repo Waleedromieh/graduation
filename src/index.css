@@ -1,1 +1,12 @@
 @import "tailwindcss";
+*{
+    font-family: 'Cairo', sans-serif;
+}
+.waleed{
+    background-image: url(assets/1.png);
+    background-position: center;
+    background-size: cover;
+}
+.waleed2{
+    background-color: rgba(0, 0, 0, 0.4);
+}

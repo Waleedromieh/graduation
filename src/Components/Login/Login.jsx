@@ -70,9 +70,9 @@ export default function Login() {
                 <button className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-gray-300 flex items-center justify-center">
                   <span className="font-bold">G</span>
                 </button>
-                <button className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-gray-300 flex items-center justify-center">
+                {/* <button className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-gray-300 flex items-center justify-center">
                   <span className="font-bold">in</span>
-                </button>
+                </button> */}
               </div>
   
               <div className="text-center text-gray-500 text-xs sm:text-sm mb-4 sm:mb-6">

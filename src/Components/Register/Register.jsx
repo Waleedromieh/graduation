@@ -68,14 +68,14 @@ export default function Register() {
             {/* Social login options */}
             <div className="flex justify-center space-x-4 mb-6 md:mb-8">
               <button className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-gray-300 flex items-center justify-center">
-                <span className="font-bold">f</span>
+                <a href="https://www.facebook.com/profile.php?id=100064804803798" target="_blank"><span className="font-bold">f</span></a>
               </button>
               <button className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-gray-300 flex items-center justify-center">
                 <span className="font-bold">G</span>
               </button>
-              <button className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-gray-300 flex items-center justify-center">
+              {/* <button className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-gray-300 flex items-center justify-center">
                 <span className="font-bold">in</span>
-              </button>
+              </button> */}
             </div>
 
             <div className="text-center text-gray-500 text-xs sm:text-sm mb-4 sm:mb-6">
