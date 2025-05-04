@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 export default function Products() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
@@ -11,7 +13,7 @@ export default function Products() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {products.map((product) => (
-            <div
+            <NavLink to={'/productDetails'}
               key={product.id}
               className="group bg-white rounded-lg overflow-hidden border border-gray-200 transition-all hover:shadow-lg"
             >
@@ -59,7 +61,7 @@ export default function Products() {
                   </button>
                 </div>
               </div>
-            </div>
+            </NavLink>
           ))}
         </div>
 
@@ -82,7 +84,7 @@ const products = [
     price: 299.99,
     rating: 4.8,
     image: "https://m.media-amazon.com/images/I/51LYGIcUdGL._AC_SX522_.jpg",
-    isNew: true,
+    isNew:false ,
     discount: 0,
   },
   {
@@ -92,8 +94,8 @@ const products = [
     price: 24.99,
     rating: 4.5,
     image: "https://green-detergents.com/cdn/shop/files/1_f0a10e30-5279-4dff-b3d0-e532398f3d25.png?v=1712882441&width=1200",
-    isNew: false,
-    discount: 10,
+    isNew:false ,
+    discount: 0,
   },
   {
     id: 3,
@@ -112,7 +114,7 @@ const products = [
     price: 299.99,
     rating: 4.8,
     image: "https://m.media-amazon.com/images/I/51LYGIcUdGL._AC_SX522_.jpg",
-    isNew: true,
+    isNew: false,
     discount: 0,
   },
   {
@@ -123,7 +125,7 @@ const products = [
     rating: 4.5,
     image: "https://green-detergents.com/cdn/shop/files/1_f0a10e30-5279-4dff-b3d0-e532398f3d25.png?v=1712882441&width=1200",
     isNew: false,
-    discount: 10,
+    discount: 0,
   },
   {
     id: 6,
@@ -142,7 +144,7 @@ const products = [
     price: 299.99,
     rating: 4.8,
     image: "https://m.media-amazon.com/images/I/51LYGIcUdGL._AC_SX522_.jpg",
-    isNew: true,
+    isNew: false,
     discount: 0,
   },
   {
@@ -153,7 +155,7 @@ const products = [
     rating: 4.5,
     image: "https://green-detergents.com/cdn/shop/files/1_f0a10e30-5279-4dff-b3d0-e532398f3d25.png?v=1712882441&width=1200",
     isNew: false,
-    discount: 10,
+    discount: 0,
   },
   {
     id: 9,
@@ -172,7 +174,7 @@ const products = [
     price: 299.99,
     rating: 4.8,
     image: "https://m.media-amazon.com/images/I/51LYGIcUdGL._AC_SX522_.jpg",
-    isNew: true,
+    isNew: false,
     discount: 0,
   },
   {
@@ -183,7 +185,7 @@ const products = [
     rating: 4.5,
     image: "https://green-detergents.com/cdn/shop/files/1_f0a10e30-5279-4dff-b3d0-e532398f3d25.png?v=1712882441&width=1200",
     isNew: false,
-    discount: 10,
+    discount: 0,
   },
   {
     id: 3,
@@ -202,7 +204,7 @@ const products = [
     price: 299.99,
     rating: 4.8,
     image: "https://m.media-amazon.com/images/I/51LYGIcUdGL._AC_SX522_.jpg",
-    isNew: true,
+    isNew: false,
     discount: 0,
   },
   {
@@ -213,7 +215,7 @@ const products = [
     rating: 4.5,
     image: "https://green-detergents.com/cdn/shop/files/1_f0a10e30-5279-4dff-b3d0-e532398f3d25.png?v=1712882441&width=1200",
     isNew: false,
-    discount: 10,
+    discount: 0,
   },
   {
     id: 6,
@@ -232,7 +234,7 @@ const products = [
     price: 299.99,
     rating: 4.8,
     image: "https://m.media-amazon.com/images/I/51LYGIcUdGL._AC_SX522_.jpg",
-    isNew: true,
+    isNew: false,
     discount: 0,
   },
   {
@@ -243,7 +245,7 @@ const products = [
     rating: 4.5,
     image: "https://green-detergents.com/cdn/shop/files/1_f0a10e30-5279-4dff-b3d0-e532398f3d25.png?v=1712882441&width=1200",
     isNew: false,
-    discount: 10,
+    discount: 0,
   },
   {
     id: 9,
@@ -262,7 +264,7 @@ const products = [
     price: 299.99,
     rating: 4.8,
     image: "https://m.media-amazon.com/images/I/51LYGIcUdGL._AC_SX522_.jpg",
-    isNew: true,
+    isNew: false,
     discount: 0,
   },
   {
@@ -273,7 +275,7 @@ const products = [
     rating: 4.5,
     image: "https://green-detergents.com/cdn/shop/files/1_f0a10e30-5279-4dff-b3d0-e532398f3d25.png?v=1712882441&width=1200",
     isNew: false,
-    discount: 10,
+    discount: 0,
   },
   {
     id: 3,
@@ -292,7 +294,7 @@ const products = [
     price: 299.99,
     rating: 4.8,
     image: "https://m.media-amazon.com/images/I/51LYGIcUdGL._AC_SX522_.jpg",
-    isNew: true,
+    isNew: false,
     discount: 0,
   },
   {
@@ -303,7 +305,7 @@ const products = [
     rating: 4.5,
     image: "https://green-detergents.com/cdn/shop/files/1_f0a10e30-5279-4dff-b3d0-e532398f3d25.png?v=1712882441&width=1200",
     isNew: false,
-    discount: 10,
+    discount: 0,
   },
   {
     id: 6,
@@ -322,7 +324,7 @@ const products = [
     price: 299.99,
     rating: 4.8,
     image: "https://m.media-amazon.com/images/I/51LYGIcUdGL._AC_SX522_.jpg",
-    isNew: true,
+    isNew: false,
     discount: 0,
   },
   {
@@ -333,7 +335,7 @@ const products = [
     rating: 4.5,
     image: "https://green-detergents.com/cdn/shop/files/1_f0a10e30-5279-4dff-b3d0-e532398f3d25.png?v=1712882441&width=1200",
     isNew: false,
-    discount: 10,
+    discount: 0,
   },
   {
     id: 9,

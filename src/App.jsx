@@ -11,7 +11,11 @@ import Register from './Components/Register/Register'
 import Login from './Components/Login/Login'
 import Cart from './Components/Cart/Cart'
 import CheckoutPage from './Components/Checkout/Checkout'
-
+import ProfilePage from './Components/Profile/Profile'
+import ProductDetails from './Components/Productdetails/Productdetails'
+import NotFound from './Components/NotFound/NotFound'
+import WishlistPage from './Components/Wishlist/Wishlist'
+import ForgetPassword from './Components/ForgetPassword/ForgetPassword'
 function App() {
   let x=createBrowserRouter([
     {path:'/',element:<Layout/>,children:[
@@ -23,16 +27,19 @@ function App() {
       {path:'products',element:<Products/>},
       {path:'register',element:<Register/>},
       {path:'login',element:<Login/>},
+      {path:'Profile',element:<ProfilePage/>},
       {path:'checkout',element:<CheckoutPage/>},
+      {path:'productDetails',element:<ProductDetails/>},
       {path:'cart',element:<Cart/>},
+      {path:'wishlist',element:<WishlistPage/>},
+      {path:'forgetpassword',element:<ForgetPassword/>},
+      {path:'*',element:<NotFound/>},
     ]}
   ])
-
   return (
     <>
 <RouterProvider router={x}></RouterProvider>
     </>
   )
 }
-
 export default App

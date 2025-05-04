@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import logo from '../../assets/Vector.svg'
-import { ShoppingBag } from 'lucide-react';
+import { Heart, ShoppingBag } from 'lucide-react';
 import { useState } from "react"
 
 const Navbar = () => {
@@ -27,6 +27,7 @@ const Navbar = () => {
               <NavLink to={'services'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Services</NavLink>
               <NavLink to={'contact'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Contact</NavLink>
               <NavLink to={'products'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Products</NavLink>
+              <NavLink to={'profile'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Profile</NavLink>
               {/* <NavLink to={'cart'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>    <ShoppingBag /></NavLink> */}
 
             </div>
@@ -35,6 +36,7 @@ const Navbar = () => {
           {/* Mobile menu button with custom hamburger icon */}
 <div className='flex'>
 <NavLink to={'cart'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium flex justify-center items-center ':'flex justify-center items-center text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>    <ShoppingBag /></NavLink>
+<NavLink to={'/Wishlist'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium flex justify-center items-center ':'flex justify-center items-center text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>     <Heart /></NavLink>
 
 <div className="flex items-center md:hidden">
             <button
@@ -79,6 +81,7 @@ const Navbar = () => {
               <NavLink to={'services'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Services</NavLink>
               <NavLink to={'contact'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Contact</NavLink>
               <NavLink to={'products'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Products</NavLink>
+              <NavLink to={'profile'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>Profile</NavLink>
               {/* <NavLink to={'cart'} className={(x)=>x.isActive ?'text-white bg-red-500 rounded-2xl   px-3 py-2 text-sm font-medium ':'text-red-600 hover:text-red-800  border-red-600 px-3 py-2 text-sm font-medium hover:bg-red-300 rounded-2xl hover:text-white transition-all duration-300 ease-in-out' }>    <ShoppingBag /></NavLink> */}
           <NavLink to={'register'} className="w-full mt-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium justify-center text-center">
             Get Started

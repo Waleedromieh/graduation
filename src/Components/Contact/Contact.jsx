@@ -174,11 +174,12 @@ export default function Contact() {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800">Our Location</h4>
                     <p className="text-gray-600 mt-1">
-                      123 Station Avenue
+                    Cairo Governorate 4272011 Qasr El Nil
                       <br />
-                      Houston, TX 77001
+                      شارع دار الشفا
+
                       <br />
-                      United States
+                      Cairo
                     </p>
                   </div>
                 </div>
@@ -203,9 +204,9 @@ export default function Contact() {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800">Phone Number</h4>
                     <p className="text-gray-600 mt-1">
-                      Main: (555) 123-4567
+                    19816
                       <br />
-                      Support: (555) 987-6543
+                      Support: 	2/3/4 202-26706401+
                     </p>
                   </div>
                 </div>
@@ -230,9 +231,9 @@ export default function Contact() {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800">Email Address</h4>
                     <p className="text-gray-600 mt-1">
-                      info@cpcstations.com
+                      CPC@gmail.com
                       <br />
-                      support@cpcstations.com
+                  
                     </p>
                   </div>
                 </div>
@@ -257,11 +258,11 @@ export default function Contact() {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800">Business Hours</h4>
                     <p className="text-gray-600 mt-1">
-                      Monday - Friday: 8:00 AM - 6:00 PM
+                    Sunday - Friday: 8:00 AM - 6:00 PM
                       <br />
                       Saturday: 9:00 AM - 4:00 PM
                       <br />
-                      Sunday: Closed
+                      Friday: Closed
                     </p>
                   </div>
                 </div>

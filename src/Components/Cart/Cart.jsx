@@ -89,9 +89,9 @@ export default function Cart() {
                 </svg>
                 <h2 className="text-xl font-medium text-gray-600 mb-2">Your cart is empty</h2>
                 <p className="text-gray-500 mb-8">Looks like you haven't added anything to your cart yet.</p>
-                <button className="bg-black hover:bg-gray-800 text-white py-3 px-6 rounded-xl font-medium transition-colors">
+                <NavLink to={'/products'} className="bg-black hover:bg-gray-800 text-white py-3 px-6 rounded-xl font-medium transition-colors">
                   Continue Shopping
-                </button>
+                </NavLink>
               </motion.div>
             ) : (
               <>

@@ -137,13 +137,16 @@ export default function Login() {
                     </div>
                   </div>
                 </div>
-  
+                <NavLink to={'/forgetPassword'} className={'text-red-600 hover:text-red-800 transition duration-200'}>
+                  Forget Password ??!
+                </NavLink>
                 <button
                   type="submit"
                   className="w-full bg-red-600 text-white py-2 sm:py-3 rounded-full mt-6 sm:mt-8 hover:bg-red-700 transition-colors text-sm sm:text-base"
                 >
                  Login
                 </button>
+                
               </form>
             </div>
           </div>

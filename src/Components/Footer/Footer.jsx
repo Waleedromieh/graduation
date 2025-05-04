@@ -7,8 +7,8 @@ export default function Footer() {
           <div className="py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Company Info */}
             <div>
-              <h3 className="text-red-600 font-bold text-lg mb-4">Company Name</h3>
-              <p className="text-gray-600">Creating amazing experiences since 2023.</p>
+              <h3 className="text-red-600 font-bold text-lg mb-4">CPC GO</h3>
+              <p className="text-gray-600">Creating amazing experiences since 1934.</p>
             </div>
   
             {/* Quick Links */}
@@ -42,16 +42,16 @@ export default function Footer() {
             <div>
               <h3 className="text-red-600 font-bold text-lg mb-4">Contact Us</h3>
               <address className="not-italic text-gray-600">
-                <p>123 Main Street</p>
-                <p>City, State 12345</p>
+                <p>Cairo Governorate 4272011 Qasr El Nil</p>1
+                <p> شارع دار الشفا </p>
                 <p className="mt-2">
                   <a href="mailto:info@example.com" className="text-red-500 hover:underline">
-                    info@example.com
+                    CPCGO@gmail.com 
                   </a>
                 </p>
                 <p>
                   <a href="tel:+11234567890" className="text-red-500 hover:underline">
-                    (123) 456-7890
+                  19816
                   </a>
                 </p>
               </address>
@@ -60,7 +60,7 @@ export default function Footer() {
   
           {/* Bottom Bar */}
           <div className="border-t border-gray-200 py-6 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-600 text-sm">&copy; {new Date().getFullYear()} Company Name. All rights reserved.</p>
+            <p className="text-gray-600 text-sm">&copy; {new Date().getFullYear()} CPC GO. All rights reserved.</p>
             <div className="mt-4 md:mt-0">
               <ul className="flex space-x-6">
                 <li>

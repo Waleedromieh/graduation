@@ -1,4 +1,4 @@
-import img1 from '../../assets/Frame 14.png'
+import img1 from '../../assets/55.jpg'
 import img2 from '../../assets/Frame 33.png'
 import img3 from '../../assets/Frame 44.png'
 import img4 from '../../assets/Frame 4.png'
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
             <div className="flex space-x-2">
               <button className="bg-gray-300 text-gray-800 px-4 py-1 rounded-md text-sm cursor-pointer">Add to cart</button>
-              <button className="bg-gray-300 text-gray-800 px-4 py-1 rounded-md text-sm cursor-pointer">View details</button>
+              <NavLink to={'/productDetails'} className="bg-gray-300 text-gray-800 px-4 py-1 rounded-md text-sm cursor-pointer">View details</NavLink>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Product 1 */}
-          <div className="bg-gray-100 rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 ease-in-out ">
+          <NavLink to={'/productDetails'} className="bg-gray-100 rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 ease-in-out ">
             <img
               src={img2}
               alt="Cleaning product"
@@ -79,10 +79,10 @@ export default function Home() {
                 <button className="bg-red-500 text-white px-3 py-1 rounded-md text-xs cursor-pointer">ADD TO CART</button>
               </div>
             </div>
-          </div>
+          </NavLink>
 
           {/* Product 2 */}
-          <div className="bg-gray-100 rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 ease-in-out">
+          <NavLink to={'/productDetails'} className="bg-gray-100 rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 ease-in-out">
             <img
               src={img3}
               alt="Cleaning product"
@@ -102,10 +102,10 @@ export default function Home() {
                 <button className="bg-red-500 text-white px-3 py-1 rounded-md text-xs cursor-pointer">ADD TO CART</button>
               </div>
             </div>
-          </div>
+          </NavLink>
 
           {/* Product 3 */}
-          <div className="bg-gray-100 rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 ease-in-out">
+          <NavLink to={'/productDetails'} className="bg-gray-100 rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 ease-in-out">
             <img
               src={img4}
               alt="Cleaning product"
@@ -125,10 +125,10 @@ export default function Home() {
                 <button className="bg-red-500 text-white px-3 py-1 rounded-md text-xs cursor-pointer">ADD TO CART</button>
               </div>
             </div>
-          </div>
+          </NavLink>
 
           {/* Product 4 */}
-          <div className="bg-gray-100 rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 ease-in-out">
+          <NavLink to={'/productDetails'}  className="bg-gray-100 rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 ease-in-out">
             <img
               src={img5}
               alt="Cleaning product"
@@ -148,14 +148,14 @@ export default function Home() {
                 <button className="bg-red-500 text-white px-3 py-1 rounded-md cursor-pointer text-xs cursor-pointer">ADD TO CART</button>
               </div>
             </div>
-          </div>
+          </NavLink>
         </div>
       </div>
 
       {/* Category Banners */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 bg-red-100 p-6 rounded-lg">
         {/* Oil Banner */}
-        <div className="bg-white p-6 rounded-lg flex items-center cursor-pointer">
+        <NavLink to={"/products"}> <div className="bg-white p-6 rounded-lg flex items-center cursor-pointer">
           <div className="flex-1">
             <h3 className="text-3xl font-bold">OIL</h3>
             <p className="text-sm mt-2 uppercase">
@@ -170,9 +170,11 @@ export default function Home() {
               className="h-32 object-contain mx-auto"
             />
           </div>
-        </div>
+        </div></NavLink>
+       
 
         {/* Petrochemicals Banner */}
+        <NavLink to={"/products"}>
         <div className="bg-white p-6 rounded-lg flex items-center cursor-pointer">
           <div className="flex-1">
             <h3 className="text-xl font-bold">
@@ -194,6 +196,8 @@ export default function Home() {
             />
           </div>
         </div>
+        </NavLink>
+        
       </div>
     </div>
   )
