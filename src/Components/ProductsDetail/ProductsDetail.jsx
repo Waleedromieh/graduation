@@ -1,8 +1,6 @@
-"use client"
-
 import { useState } from "react"
 import img1 from '../../assets/royal soft.jpg'
-export default function ProductDetails() {
+export default function ProductsDetail() {
   const [quantity, setQuantity] = useState(1)
 
   const product = {
