@@ -58,7 +58,7 @@ export default function WishlistPage() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {wishlistItems.map((item) => (
-              <NavLink to={'/productDetails'}
+              <div 
                 key={item.id}
                 className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow"
               >
@@ -72,15 +72,15 @@ export default function WishlistPage() {
                     <Trash2 className="h-5 w-5" />
                   </button>
                 </div>
-                <div className="p-4">
+                <NavLink to={'/productDetails'} className="p-4">
                   <h3 className="font-medium text-gray-800 mb-2">{item.name}</h3>
                   <p className="text-red-600 font-bold mb-3">${item.price.toFixed(2)}</p>
                   <button className="w-full flex items-center justify-center gap-2 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition-colors">
                     <ShoppingCart className="h-4 w-4" />
                     Add to Cart
                   </button>
-                </div>
-              </NavLink>
+                </NavLink>
+              </div>
             ))}
           </div>
         )}
